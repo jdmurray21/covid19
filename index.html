@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Covid-19 Data</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="http://127.0.0.1:5000/select_states?" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Compare Total Cases by State</a>
+    <a href="http://127.0.0.1:5000/total_deaths?" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Compare Total Deaths by State</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Welcome to the Covid-19 Website</h1>
+  <p class="w3-xlarge">Select the options above to learn more about Covid-19 cases in the United States</p>
+  <form method="get" action="/select_states">
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="submit">Explore Data</button>
+  </form>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Covid-19 Facts</h1>
+      <h5 class="w3-padding-32">
+        Coronaviruses are a large group of viruses that can cause illness in animals and humans. Some coronaviruses commonly circulate in the United States and usually cause upper respiratory symptoms such as cough or runny nose, although some can cause more serious illness.
+        The 2019 novel (new) coronavirus causes the illness coronavirus disease 2019 (COVID-19)
+      </h5>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img width="500" height="350" src="https://clf1.medpagetoday.net/media/images/85xxx/85191.jpg" alt="doctor">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img width="310" height="195" src="https://media.bizj.us/view/img/11627574/coronavirus-cover-image-1*750xx5000-2813-0-52.jpg" alt="covid-19 picture">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>How Does Covid-19 Spread?</h1>
+      <h5 class="w3-padding-32">
+        Coronaviruses like COVID-19 are most often spread through the air by coughing or sneezing, through close personal contact (including touching and shaking hands) or through touching your nose, mouth or eyes before washing your hands.
+        Learn more from the Centers for Disease Control and Prevention (CDC) about how COVID-19 spreads and how to protect yourself and your community from getting and spreading respiratory illnesses by clicking the link below.
+      </h5>
+      <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC Covid-19 Info</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
